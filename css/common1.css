@@ -43,6 +43,11 @@ button {
   fill: #00ff00;
 }
 
+@media screen and (max-width: 840px) {
+  .cursor {
+    display: none;
+  }
+}
 
 /* --------------------------
   ロード画面
@@ -392,11 +397,13 @@ h2 {
     width: 100%;
     max-width: 700px;
     margin: 0 auto 30px;
+    padding: 22px 22px 40px;
   }
 
   .skill__des {
     max-width: 700px;
     margin: 0 auto;
+    padding: 22px 22px 40px;
   }
 }
 
@@ -657,7 +664,8 @@ h2 {
 
 @media screen and (max-width: 840px) {
   .popup {
-    min-width: 340px;
+    width: 90%;
+    min-width: inherit;
     border-radius: 40px;
   }
 
