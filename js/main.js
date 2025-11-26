@@ -36,7 +36,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
   /* --------------------------
-     カーソル処理（例）
+     カーソ
   --------------------------- */
 
     // クラスをJSで使えるように準備
@@ -113,39 +113,13 @@ document.addEventListener('DOMContentLoaded', () => {
   /* --------------------------
      ロード画面
   --------------------------- */
-    // window.addEventListener("load", () => {
-    
-    // setTimeout(() => {
-    //     document.getElementById("loader").classList.add("hide");
-    // }, 3000);
-    // });
-
     document.getElementById("loader").addEventListener("click", () => {
         document.getElementById("loader").classList.add("hide");
     });
 
-
-
-
-
-
-
-
-
-
     function typeText(el, text, delay = 200, callback) {
         let i = 0;
         const interval = setInterval(() => {
-
-            // const span = document.createElement("span");
-            // span.textContent = text[i];
-            // el.appendChild(span);
-
-            // setTimeout(() => {
-            //     span.style.opacity = 1;
-            //     span.computedStyleMap.transform = "translateY(0)";
-            // }, 10);
-
             el.textContent += text[i];
 
             i++;
@@ -159,7 +133,14 @@ document.addEventListener('DOMContentLoaded', () => {
     window.onload = () => {
         typeText(document.getElementById("typing1"), "takahashi", 200, () => {
             typeText(document.getElementById("typing2"), "tsuzumi", 200, () => {
-            typeText(document.getElementById("typing3"), "portfolio", 200);
+                typeText(document.getElementById("typing3"), "portfolio", 200, () => {
+                    typeText(document.getElementById("typing4"), ". . .", 500, () => {
+
+                        setTimeout(() => {
+                            document.getElementById("loader").classList.add("hide");
+                        }, 1000);
+                    });
+                });
             });
         });
     };
