@@ -1,608 +1,564 @@
 <!DOCTYPE html>
 <html lang="ja">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>takahashi tsuzumi portfolio</title>
-	<meta name="description" content="髙橋鼓のポートフォリオ">
-	<meta property="og:url" content="">
-	<meta property="og:title" content="takahashi tsuzumi portfolio">
-	<meta property="og:type" content="website">
-	<meta property="og:description" content="髙橋鼓のポートフォリオ">
-	<meta property="og:image" content="">
-	<meta name="twitter:card" content="summary_large_image">
-	<meta property="og:site_name" content="takahashi tsuzumi portfolio">
-	<meta property="og:locale" content="ja_JP">
-	<link rel="icon" href="images/favicon.ico" sizes="16x16">
-	<link rel="apple-touch-icon-precomposed" href="images/icon-256x256.png">
-	<link rel="stylesheet" href="css/reset.css">
-  <link rel="stylesheet" href="css/common1.css">
-  
-  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>takahashi tsuzumi portfolio</title>
+    <meta name="description" content="髙橋鼓のポートフォリオ" />
+    <meta property="og:url" content="" />
+    <meta property="og:title" content="takahashi tsuzumi portfolio" />
+    <meta property="og:type" content="website" />
+    <meta property="og:description" content="髙橋鼓のポートフォリオ" />
+    <meta property="og:image" content="" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta property="og:site_name" content="takahashi tsuzumi portfolio" />
+    <meta property="og:locale" content="ja_JP" />
+    <link rel="icon" href="images/favicon.ico" sizes="16x16" />
+    <link rel="apple-touch-icon-precomposed" href="images/icon-256x256.png" />
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/common.css" />
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <!-- font -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+New:wght@400;700;900&display=swap" rel="stylesheet">
-
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Alata&family=Zen+Kaku+Gothic+New:wght@400;700;900&display=swap"
+      rel="stylesheet"
+    />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
-
-</head>
-
-<body>
-  <!--------------------------
+  </head>
+  <body>
+    <!--------------------------
     カーソル
   --------------------------->
-  <div class="cursor">
-    <div class="cursor__ball cursor__ball--big">
+    <div class="cursor">
+      <div class="cursor__ball cursor__ball--big">
         <svg height="30" width="30">
-            <circle cx="15" cy="15" r="12" stroke-width="0"></circle>
+          <circle cx="15" cy="15" r="12" stroke-width="0"></circle>
         </svg>
-    </div>
-
-    <div class="cursor__ball cursor__ball--small">
+      </div>
+      <div class="cursor__ball cursor__ball--small">
         <svg height="10" width="10">
-            <circle cx="5" cy="5" r="4" stroke-width="0"></circle>
+          <circle cx="5" cy="5" r="4" stroke-width="0"></circle>
         </svg>
+      </div>
     </div>
-  </div>
-
-  <!--------------------------
+    <!--------------------------
     ロード画面
   --------------------------->
-  <div id="loader">
-    <div class="wrapper">
+    <div id="loader">
+      <div class="wrapper">
         <div id="typing1" class="typing"></div>
         <div id="typing2" class="typing"></div>
         <div id="typing3" class="typing"></div>
-        <div id="typing4" class="typing"></div>
+      </div>
     </div>
-  </div>
-
-
-  <!--------------------------
+    <!--------------------------
     header
   --------------------------->
-  <header>
-    <div class="header__wrap">
-      <h1 class="hoverable"><a href="/">takahashi tsuzumi<br>portfolio</a></h1>
-      
-
-      <nav class="header-nav">
-        <ul class="header-nav__list">
-          <li class="header-nav__item">
-            <a href="#about" class="header-nav__link hoverable">about</a>
-          </li>
-          <li class="header-nav__item">
-            <a href="#skills" class="header-nav__link hoverable">skills</a>
-          </li>
-          <li class="header-nav__item">
-            <a href="#works" class="header-nav__link hoverable">works</a>
-          </li>
-          <li class="header-nav__item">
-            <a href="#contact" class="header-nav__link hoverable">contact</a>
-          </li>
-        </ul>
-      </nav>
-
-    </div>
-	</header>
-
-  <!--------------------------
+    <header>
+      <div class="header__wrap">
+        <h1 class="hoverable">
+          <a href="/">
+            <img
+              class="logo__img"
+              src="/images/logo.png"
+              alt="takahashi tsuzumi portfolio"
+            />
+          </a>
+        </h1>
+        <nav class="header-nav en">
+          <ul class="header-nav__list">
+            <li>
+              <a href="#about" class="header-nav__link hoverable">about</a>
+            </li>
+            <li>
+              <a href="#skills" class="header-nav__link hoverable">skills</a>
+            </li>
+            <li>
+              <a href="#works" class="header-nav__link hoverable">works</a>
+            </li>
+            <li>
+              <a href="#contact" class="header-nav__link hoverable">contact</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <!--------------------------
     main
   --------------------------->
-  <main>
-    <div class="bg_pattern Polka"></div>
-
-    <!--------------------------
+    <main>
+      <div class="bg_pattern Polka"></div>
+      <!--------------------------
       about
     --------------------------->
-    <div id="about">
-      <div class="about__wrap">
-        <h2>⚫︎ わたしのこと</h2>
-        <p class="section__sub">about me</p>
-
-        <div class="about__main">
-          <img class="about__img" src="/images/me.jpg" alt="">
-          <div class="about__text">
-            <p class="name__rubi">takahashi tsuzumi</p>
-            <p class="name">髙橋 鼓</p>
-            <p>2000年、奈良県生まれ奈良県育ち。<br>高校卒業後、オーストラリア・ブリスベンに語学留学。
-                帰国後はWEBサイトの運営・企画に5年間携わっていました。日々の業務の中でデザインやコーディングに関心を持ち、社内開発部のデザイン研修に参加。<br>
-                コーディングの面白さに魅了され、よりコーディングに関われるような職に就きたいと思い退職。
-                エンジニアとしての知識を身に着けるため、職業訓練校に通い中です。<br>
-                フロントエンドエンジニアを目指して日々学んでいます。</p>
-
-            <!--------------------------
+      <div id="about">
+        <div class="block__wrap">
+          <h2>⚫︎ わたしのこと</h2>
+          <p class="section__sub">about me</p>
+          <div>
+            <div class="about__text">
+              <p class="en">takahashi tsuzumi</p>
+              <p class="name">髙橋 鼓</p>
+              <p>
+                2000年、奈良県生まれ奈良県育ち。<br />高校卒業後、オーストラリア・ブリスベンに語学留学。帰国後はWEBサイトの運営・企画に5年間携わっていました。日々の業務の中でデザインやコーディングに関心を持ち、社内開発部のデザイン研修に参加。<br />
+                コーディングの面白さに魅了され、よりコーディングに関われるような職に就きたいと思い退職。エンジニアとしての知識を身に着けるため、職業訓練校に通い中です。<br />フロントエンドエンジニアを目指して日々学んでいます。
+              </p>
+              <!--------------------------
               about more
             --------------------------->
-            <div class="about__more">
-
-                  <!--history-->
-                  <div class="item">
-                    <label class="about__btn hoverable" for="popup-history">
-                        <p class="more__text">career</p>
-                        
-                    </label>
-
-                  <!--history ポップアップ-->
-                      <input type="checkbox" class="popup-flag" id="popup-history">
-                      <label class="popup-background" for="popup-history"></label>
-                      <div class="popup">
-                        <div class="popup__inner">
-                          <label class="close-button hoverable" for="popup-history"></label>
-                            
-                          <div class="popup__content">
-                            <p class="block__title">career</p>
-                            
-                            <div class="popup__detail">
-                              <div class="detail__item">
-                                <p class="detail year">2019年</p>
-                                <p class="detail__text">IBGメディア株式会社 アルバイト入社</p>
-                                <p class="detail__note">音楽メディアUtaTenの編集者として入社。<br>コンテンツの更新やコラム記事の編集などサイトのメインコンテンツを主に担当しました。</p>
-                              </div>
-                              <div class="detail__item">
-                                <p class="detail year">2020年〜</p>
-                                <p class="detail__text">IBGメディア株式会社 正社員雇用</p>
-                                <p class="detail__note">１年間のアルバイトを経て、正社員雇用されました。<br>音楽メディアUtaTenのサイトリーダーとしてメインコンテンツの業務と並行して、アクセス数を向上させるため新規コンテンツ企画を行いました。</p>
-                              </div>
-                              <div class="detail__item">
-                                <p class="detail year">2021年</p>
-                                <p class="detail__text">社内のデザイン研修に参加</p>
-                                <p class="detail__note">［研修内容］<br>Photoshop・Illustrator ： 使用方法・課題バナーの制作<br>After Effects ： 使用方法・課題動画の制作<br>XD ： 使用方法・課題サイトのワイヤー制作<br>HTML/CSS ： 課題サイトのコーディング</p>
-                              </div>
-                              <div class="detail__item">
-                                <p class="detail year">2021年〜</p>
-                                <p class="detail__text">デザイン業務開始</p>
-                                <p class="detail__note">実務として広告のバナー、LPの制作を開始。<br>主にアイドルオーディション・マッチングアプリのLP制作に携わりました。<br></p>
-                              </div>
-                              <div class="detail__item">
-                                <p class="detail year">2024年</p>
-                                <p class="detail__text">ウェブデザイン技能検定 3級 合格</p>
-                                <p class="detail__note">学んでいることを形に残したいと思い取得。</p>
-                              </div>
-                              <div class="">
-                                <p class="detail year">2025年</p>
-                                <p class="detail__text">エンジニアを目指して職業訓練校に通う</p>
-                                <p class="detail__note">コーディングを通して形にする面白さを感じ、より専門的な技術を扱えるようになりたいと思いエンジニアを志す。<br>2025年4月にIBGメディア株式会社を退職。職業訓練校でエンジニアの基礎を学びながら、現在転職活動中です。</p>
-                              </div>
-
-                            </div>
-                              
+              <div class="about__more">
+                <!-- career -->
+                <div class="item">
+                  <label class="about__btn hoverable" for="popup-career">
+                    <p class="block__title">career</p>
+                  </label>
+                  <!-- career ポップアップ -->
+                  <input type="checkbox" class="popup-flag" id="popup-career" />
+                  <label class="popup-background" for="popup-career"></label>
+                  <div class="popup">
+                    <div class="popup__inner">
+                      <label
+                        class="close-button hoverable"
+                        for="popup-career"
+                      ></label>
+                      <div class="popup__content">
+                        <p class="block__title">career</p>
+                        <div class="popup__detail">
+                          <div class="detail__item">
+                            <p class="detail year">2019年</p>
+                            <p class="detail__text">
+                              IBGメディア株式会社 アルバイト入社
+                            </p>
+                            <p class="detail__note">
+                              音楽メディアUtaTenの編集者として入社。
+                              <br />コンテンツの更新やコラム記事の編集など、サイトのメインコンテンツを主に担当しました。
+                            </p>
+                          </div>
+                          <div class="detail__item">
+                            <p class="detail year">2020年〜</p>
+                            <p class="detail__text">
+                              IBGメディア株式会社 正社員雇用
+                            </p>
+                            <p class="detail__note">
+                              １年間のアルバイトを経て、正社員雇用されました。
+                              <br />音楽メディアUtaTenのサイトリーダーとしてメインコンテンツの業務と並行して、アクセス数を向上させるため新規コンテンツ企画を行いました。
+                            </p>
+                          </div>
+                          <div class="detail__item">
+                            <p class="detail year">2021年</p>
+                            <p class="detail__text">社内のデザイン研修に参加</p>
+                            <p class="detail__note">
+                              ［研修内容］ <br />Photoshop・Illustrator ：
+                              使用方法・課題バナーの制作 <br />After Effects ：
+                              使用方法・課題動画の制作 <br />XD ：
+                              使用方法・課題サイトのワイヤー制作 <br />HTML/CSS
+                              ： 課題サイトのコーディング
+                            </p>
+                          </div>
+                          <div class="detail__item">
+                            <p class="detail year">2021年〜</p>
+                            <p class="detail__text">デザイン業務開始</p>
+                            <p class="detail__note">
+                              実務として広告のバナー、LPの制作を開始。
+                              <br />worksに掲載しているものの他に、アイドルオーディション・マッチングアプリのLP制作に携わりました。
+                              <br />
+                            </p>
+                          </div>
+                          <div class="detail__item">
+                            <p class="detail year">2024年</p>
+                            <p class="detail__text">
+                              ウェブデザイン技能検定 3級 合格
+                            </p>
+                            <p class="detail__note">
+                              学んでいることを形に残したいと思い取得しました。
+                            </p>
+                          </div>
+                          <div class="">
+                            <p class="detail year">2025年</p>
+                            <p class="detail__text">
+                              エンジニアを目指して職業訓練校に通う
+                            </p>
+                            <p class="detail__note">
+                              コーディングを通して形にする面白さを感じ、より専門的な技術を扱えるようになりたいと思いエンジニアとしてのキャリアを意識し始めました。
+                              <br />2025年4月にIBGメディア株式会社を退職。職業訓練校でエンジニアの基礎を学びながら、現在転職活動中です。
+                            </p>
                           </div>
                         </div>
-                      </div> 
+                      </div>
+                    </div>
                   </div>
-
-                  <!--like-->
-                  <div class="item">
-                    <label class="about__btn hoverable" for="popup-like">
-                        <p class="more__text">like</p>
-                        
-                    </label>
-
-                  <!--like ポップアップ-->
-                      <input type="checkbox" class="popup-flag" id="popup-like">
-                      <label class="popup-background" for="popup-like"></label>
-                      <div class="popup">
-                        <div class="popup__inner">
-                          <label class="close-button hoverable" for="popup-like"></label>
-                            
-                          <div class="popup__content">
-                            <p class="block__title">like</p>
-                            
-                            <div class="popup__detail">
-                              <div class="detail__item">
-                                <p class="detail">ものづくり</p>
-                                <p class="detail__text">小さい頃からものづくりが好きで色々なものを作っていました。<br>絵を描くのは苦手なので、編み物、粘土、刺繍など手を動かして作れるものが好きです。</p>
-                              </div>
-                              <div class="detail__item">
-                                <p class="detail">キャンプ</p>
-                                <p class="detail__text">秋〜冬のキャンプ。澄んだ空気の中、寝転がって星空に流れ星を見つける。早朝、陽が上る前から周辺を散歩、朝日が昇るのをぼーっと眺めるのが好き。</p>
-                              </div>
-                              <div class="detail__item">
-                                <p class="detail">旅行</p>
-                                <p class="detail__text">国内海外問わず、知らない街でのんびり過ごすのがマイルール。ひとり旅だと観光地にはほぼ行きません。地元のスーパーや公園、パン屋さんなど、その地域に住んでいる人に紛れ込んで過ごすのが好きです。<br>2024年から都道府県をランダムで一人旅する計画を立てています。（2/47都道府県）</p>
-                              </div>
-                              <div class="">
-                                <p class="detail">ねこ</p>
-                                <p class="detail__text">ねこが好きです。外を歩いているときは野良猫を常に探しています。</p>
-                                <img class="about__img" src="/images/me.jpg" alt="">
-                              </div>
-
-                            </div>
-                              
-                          </div>
-                        </div>
-                      </div> 
-                  </div>
-
-
-
+                </div>
+                <!--like-->
+                <!-- <div class="item"><label class="about__btn hoverable" for="popup-like"><p class="more__text">like</p></label> -->
+                <!--like ポップアップ-->
+                <!-- <input type="checkbox" class="popup-flag" id="popup-like"><label class="popup-background" for="popup-like"></label><div class="popup"><div class="popup__inner"><label class="close-button hoverable" for="popup-like"></label><div class="popup__content"><p class="block__title">like</p><div class="popup__detail"><div class="detail__item"><p class="detail">ものづくり</p><p class="detail__text">小さい頃からものづくりが好きで色々なものを作っていました。<br>絵を描くのは苦手なので、編み物、粘土、刺繍など手を動かして作れるものが好きです。</p></div><div class="detail__item"><p class="detail">キャンプ</p><p class="detail__text">秋〜冬のキャンプ。澄んだ空気の中、寝転がって星空に流れ星を見つけること。早朝、日がのぼる前からキャンプ場周辺を散歩、朝日をぼーっと眺めるのが至福の時間です。</p></div><div class="detail__item"><p class="detail">旅行</p><p class="detail__text">ひとり旅だと観光地にはほぼ行きません。地元のスーパーや公園、パン屋さんなど、その地域に住んでいる人に紛れ込んで過ごすのが好きです。<br>2024年から都道府県をランダムでひとり旅する計画を立てています。（2/47都道府県）</p></div><div class=""><p class="detail">ねこ</p><p class="detail__text">ねこが好きです。外を歩いているときは野良猫を常に探しています。</p><img class="about__img" src="/images/me.jpg" alt=""></div></div></div></div></div></div> -->
+              </div>
             </div>
-
-
-
-
-
-
-
           </div>
         </div>
       </div>
-    </div>
-
-    <!--------------------------
+      <!--------------------------
       skills
     --------------------------->
-    <div id="skills">
-      <div class="skills__wrap">
-        <h2>⚫︎ できること</h2>
-        <p class="section__sub">skills</p>
-
-        <div class="skills__main">
-          <div class="skill__dev">
-            <div class="block__title">web development</div>
-            <div>
-              <p class="skill__title">HTML / CSS</p>
-              <p class="skill__text">デザインカンプを忠実に再現。レスポンシブにも対応可能な規則性のある命名とコードを書くことで誰が見ても理解できるようなコーディングを心がけています。</p>
+      <div id="skills">
+        <div class="block__wrap">
+          <h2>⚫︎ できること</h2>
+          <p class="section__sub">skills</p>
+          <div class="skills__main">
+            <div class="block__item skill__dev">
+              <div class="block__title">web development</div>
+              <div>
+                <p class="skill__title">HTML / CSS</p>
+                <p>
+                  デザインカンプを忠実に再現。レスポンシブにも対応可能な規則性のある命名とコードを書くことで誰が見ても理解できるようなコーディングを心がけています。
+                </p>
+              </div>
+              <div>
+                <p class="skill__title">JavaScript / jQuery / PHP</p>
+                <p>
+                  簡単なアニメーションやスライドなどの動きを実装できます。
+                  <br />PHPを使用したお問い合わせフォームの作成なども可能です。
+                </p>
+              </div>
+              <div>
+                <p class="skill__title">
+                  Java (Spring Boot) / PHP (Laravel) <br />DB (MySQL PostgreSQL)
+                </p>
+                <p>
+                  職業訓練校で基礎から学んでいます。簡単なWebアプリの開発が可能です。
+                </p>
+              </div>
             </div>
-            <div>
-              <p class="skill__title">JavaScript / jQuery / PHP</p>
-              <p class="skill__text">アニメーションやスライドなどの動きを実装できます。<br>PHPを使用したお問い合わせフォームの作成なども可能です。</p>
-            </div>
-            <div>
-              <p class="skill__title">Java / PHP / Laravel</p>
-              <p class="skill__text">職業訓練校で基礎を学んでいます。</p>
-            </div>
-          </div>
-          
-          <div class="skill__des">
-            <div class="block__title">web design</div>
-            <div>
-              <p class="skill__title">Illustration / Photoshop</p>
-              <p class="skill__text">広告バナーやLPで使用する画像の作成が可能です。</p>
-            </div>
-            <div>
-              <p class="skill__title">XD / Figma</p>
-              <p class="skill__text">ワイヤーフレームやモック、WEBデザインを作成できます。</p>
-            </div>
-            <div>
-              <p class="skill__title">After Effects</p>
-              <p class="skill__text">簡単な動画作成が可能です。</p>
+            <div class="block__item">
+              <div class="block__title">web design</div>
+              <div>
+                <p class="skill__title">Illustration / Photoshop</p>
+                <p>広告バナーやLPで使用する画像の作成が可能です。</p>
+              </div>
+              <div>
+                <p class="skill__title">XD / Figma</p>
+                <p>ワイヤーフレームやモックアップの作成が可能です。</p>
+              </div>
+              <div>
+                <p class="skill__title">After Effects</p>
+                <p>簡単な動画作成が可能です。</p>
+              </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
-
-
-
-    <!--------------------------
+      <!--------------------------
       works
     --------------------------->
-    <div id="works">
-      <div class="works__wrap">
-        <h2>⚫︎ 制作物</h2>
-        <p class="section__sub">works</p>
-        <div class="works__main">
-
-          <!--------------------------
+      <div id="works">
+        <div class="block__wrap">
+          <h2>⚫︎ 制作物</h2>
+          <p class="section__sub">works</p>
+          <div class="works__main">
+            <!--------------------------
             works item
           --------------------------->
-
-          <!--UtaTenキャスティング-->
-          <div class="item">
-            <label class="item__popup hoverable" for="popup-casting">
+            <!--UtaTenキャスティング-->
+            <div class="item">
+              <label
+                class="block__item item__popup hoverable"
+                for="popup-casting"
+              >
                 <p class="block__title">design / coding</p>
-
-                <img src="images/casting.png" alt="" class="works__img">
-                <p class="works__text">LP：UtaTenキャスティング</p>
-                <!-- <div class="works__tag">
-                  <p class="tag">Figma</p>
-                  <p class="tag">VScode</p>
-                  <p class="tag">HTML</p>
-                  <p class="tag">CSS</p>
-                  <p class="tag">JavaScript</p>
-                  <p class="tag">PHP</p>
-                </div> -->
-            </label>
-
-          <!--UtaTenキャスティング ポップアップ-->
-              <input type="checkbox" class="popup-flag" id="popup-casting">
+                <img src="images/casting.png" alt="" class="works__img" />
+                <p class="works__text">UtaTenキャスティング（LP）</p>
+              </label>
+              <!--UtaTenキャスティング ポップアップ-->
+              <input type="checkbox" class="popup-flag" id="popup-casting" />
               <label class="popup-background" for="popup-casting"></label>
               <div class="popup">
                 <div class="popup__inner">
-                  <label class="close-button hoverable" for="popup-casting"></label>
-                    
-                  <div class="popup__content">
+                  <label
+                    class="close-button hoverable"
+                    for="popup-casting"
+                  ></label>
+                  <div>
                     <p class="block__title">design / coding</p>
-
-                    <div class="popup__img">
-                      <img src="images/casting.png" alt="" class="works__img">
-                    </div>
-                    
-                    <p class="detail__main">WEBサイト【音楽メディアUtaTen】内のキャスティングページ（LP制作）</p>
-                    
+                    <img src="images/casting.png" alt="" class="works__img" />
+                    <p class="detail__main">
+                      WEBサイト【音楽メディアUtaTen】内のキャスティングページ（LP制作）
+                    </p>
                     <div class="popup__detail">
                       <div class="detail__item">
                         <p class="detail">担当範囲</p>
-                        <p class="detail__text">デザイン・コーディング（HTML / CSS / JavaScript / PHP）</p>
+                        <p class="detail__text">デザイン・コーディング</p>
                       </div>
                       <div class="detail__item">
-                        <p class="detail">使用ツール</p>
-                        <p class="detail__text">Figma・Visual Studio Code</p>
+                        <p class="detail">使用技術・ツール</p>
+                        <p class="detail__text">
+                          HTML / CSS / JavaScript / jQuery / PHP
+                          <br />Figma・Visual Studio Code
+                        </p>
                       </div>
                       <div class="detail__item">
                         <p class="detail">サイトの紹介</p>
-                        <p class="detail__text">大学の学園祭にアーティストをブッキングするためのお問い合わせフォーム。</p>
-                      
+                        <p class="detail__text">
+                          学園祭などのイベントにアーティストを呼びたい学校の代わりに、アーティストの交渉・契約・当日の段取りを全て行うブッキング代行サービスのお問い合わせを受けるサイトです。
+                        </p>
                         <p class="detail__sub">制作背景</p>
-                        <p class="detail__text">コロナ禍をきっかけに学園祭へのブッキング問い合わせが減少。学生が気軽に問い合わせできるよう、新規でLPを制作しました。<br></p>
+                        <p class="detail__text">
+                          コロナ禍をきっかけに学園祭へのキャスティング問い合わせが減少。学生が気軽に問い合わせできるよう、新規でLPを制作しました。
+                          <br />
+                        </p>
                         <p class="detail__sub">工夫した点</p>
-                        <p class="detail__text">ターゲット（学生）に合わせ、問い合わせへのハードルを低く持てるよう柔らかく親しみやすいデザインを意識<br>UtaTenのブランドカラーであるオレンジを基調に統一感を持たせた<br>SEOを意識し、構成・見出し・メタ情報を最適化</p>
+                        <p class="detail__text">
+                          ・ターゲット（学生）に合わせ、問い合わせへのハードルを低く持てるよう柔らかく親しみやすいデザインを意識
+                          <br />・UtaTenのブランドカラーであるオレンジを基調に統一感を持たせた
+                          <br />・SEOを意識し、構成・見出し・メタ情報を最適化
+                        </p>
                         <p class="detail__sub">成果</p>
-                        <p class="detail__text">オーガニック流入によるお問い合わせ数が前年比180％に増加<br>学園祭以外の地域イベントからも新規問い合わせを獲得<br>サービス全体（UtaTen）の売上・取引先拡大に貢献</p>
+                        <p class="detail__text">
+                          ・オーガニック流入によるお問い合わせ数が前年比180％に増加
+                          <br />・学園祭以外の地域イベントからも新規問い合わせを獲得
+                          <br />・サービス全体（UtaTen）の売上・取引先拡大に貢献
+                        </p>
                         <p class="detail__sub">サイトURL</p>
-                        <p class="detail__text"><a href="https://utaten.com/specialContent/event-casting/index.html">https://utaten.com/specialContent/event-casting/</a></p>
-                        
+                        <p class="detail__text hoverable">
+                          <a
+                            href="https://utaten.com/specialContent/event-casting/index.html"
+                            >https://utaten.com/specialContent/event-casting/</a
+                          >
+                        </p>
                       </div>
-                      <div class="detail__item">
-                        <p class="detail__sub">PC</p>
-                        <img src="images/casting_pc.png" alt="" class="works__img">
-                      </div>
-                      <div class="detail__item" style="display: initial;">
-                        <p class="detail__sub">SP</p>
-                        <img src="images/casting_sp.png" alt="" class="works__img">
+                      <div class="detail__item detail_img">
+                        <img
+                          src="images/casting_pc_.png"
+                          alt=""
+                          class="works__img"
+                        />
+                        <img
+                          src="images/casting_sp_.png"
+                          alt=""
+                          class="works__img"
+                        />
                       </div>
                     </div>
-                      
                   </div>
                 </div>
-              </div> 
-          </div>
-
-
-          <!--クーナLP-->
-          <div class="item">
-            <label class="item__popup hoverable" for="popup-cuna">
+              </div>
+            </div>
+            <!--クーナLP-->
+            <div class="item">
+              <label class="block__item item__popup hoverable" for="popup-cuna">
                 <p class="block__title">coding</p>
-
-                <img src="images/baby.png" alt="" class="works__img">
-                <p class="works__text">LP：cuna select</p>
-                <!-- <div class="works__tag">
-                  <p class="tag">Figma</p>
-                  <p class="tag">VScode</p>
-                  <p class="tag">HTML</p>
-                  <p class="tag">CSS</p>
-                  <p class="tag">JavaScript</p>
-                  <p class="tag">PHP</p>
-                </div> -->
-            </label>
-
-          <!--クーナLP ポップアップ-->
-              <input type="checkbox" class="popup-flag" id="popup-cuna">
+                <img src="images/cuna.png" alt="" class="works__img" />
+                <p class="works__text">cuna select（LP）</p>
+              </label>
+              <!--クーナLP ポップアップ-->
+              <input type="checkbox" class="popup-flag" id="popup-cuna" />
               <label class="popup-background" for="popup-cuna"></label>
               <div class="popup">
                 <div class="popup__inner">
-                  <label class="close-button hoverable" for="popup-cuna"></label>
-                    
+                  <label
+                    class="close-button hoverable"
+                    for="popup-cuna"
+                  ></label>
                   <div class="popup__content">
                     <p class="block__title">coding</p>
-
                     <div class="popup__img">
-                      <img src="images/baby.png" alt="" class="works__img">
+                      <img src="images/cuna.png" alt="" class="works__img" />
                     </div>
-                    
-                    <p class="detail__main">出産祝い＆ベビーグッズのセレクトショップのLP</p>
-                    
+                    <p class="detail__main">
+                      出産祝い＆ベビーグッズのセレクトショップのLP
+                    </p>
                     <div class="popup__detail">
                       <div class="detail__item">
                         <p class="detail">担当範囲</p>
-                        <p class="detail__text">コーディング（HTML / CSS / JavaScript / jQuery）</p>
+                        <p class="detail__text">コーディング</p>
                       </div>
                       <div class="detail__item">
-                        <p class="detail">使用ツール</p>
-                        <p class="detail__text">Figma・Visual Studio Code</p>
+                        <p class="detail">使用技術・ツール</p>
+                        <p class="detail__text">
+                          HTML / CSS / JavaScript / jQuery <br />Figma・Visual
+                          Studio Code
+                        </p>
                       </div>
                       <div class="detail__item">
                         <p class="detail">サイトの紹介</p>
-                        <p class="detail__text">出産祝い＆ベビーグッズのセレクトショップのLP</p>
-                      
-                        <p class="detail__sub">制作背景</p>
-                        <p class="detail__text">リスティング広告で使用するランディングページを制作しました。社内のデザイン研修を終え、初めて実務でのコーディングを行ったLPです。社内のデザイナーが作成したデザインカンプを元に1からコーディングを行いました。</p>
-                        <p class="detail__sub">苦戦した点</p>
-                        <p class="detail__text">配置が複雑だったため、デザインカンプを忠実に再現するのに苦戦しました。レスポンシブで表示が変わる部分が多かったので、マークアップやクラス名の付け方を工夫し、わかりやすいコードを目指してコーディングを行いました。</p>
-                        <p class="detail__sub">成果</p>
-                        <p class="detail__text">初めての実務コーディングで、分からない部分が多く調べながらコーディングを進めたため少し時間がかかりました。研修では行えなかった柔軟さを　検索する際の感覚など、1つのLPで学べたことが多かったです。フロントエンドエンジニアを意識し始めたきっかけです。
+                        <p class="detail__text">
+                          出産祝い＆ベビーグッズのセレクトショップ「cuna
+                          select」のリスティング広告で使用するランディングページです。
                         </p>
-                      
+                        <p class="detail__sub">制作背景</p>
+                        <p class="detail__text">
+                          社内のデザイン研修を終え、初めて実務でのコーディングを行ったLPです。社内のデザイナーが作成したデザインカンプを元に1からコーディングを行いました。
+                        </p>
+                        <p class="detail__sub">苦戦した点</p>
+                        <p class="detail__text">
+                          配置が複雑だったため、デザインカンプを忠実に再現するのに苦戦しました。レスポンシブで表示が変わる部分が多かったので、マークアップやクラス名の付け方を工夫し、わかりやすいコードを目指してコーディングを行いました。
+                        </p>
+                        <p class="detail__sub">感想</p>
+                        <p class="detail__text">
+                          初めての実務コーディングで、分からない部分が多く調べながらコーディングを進めたため少し時間がかかりました。実装方法を検索する際の感覚など、1つのLPで学べたことが多く、完成したときは達成感をとても感じました。フロントエンドエンジニアを意識し始めたきっかけになったLPです。
+                        </p>
                       </div>
-                      <div class="detail__item">
-                        <p class="detail__sub">PC</p>
-                        <img src="images/cuna_pc.png" alt="" class="works__img">
-                      </div>
-                      <div class="detail__item" style="display: initial;">
-                        <p class="detail__sub">SP</p>
-                        <img src="images/cuna_sp.png" alt="" class="works__img">
+                      <div class="detail__item detail_img">
+                        <img
+                          src="images/cuna_pc_.png"
+                          alt=""
+                          class="works__img"
+                        />
+                        <img
+                          src="images/cuna_sp_.png"
+                          alt=""
+                          class="works__img"
+                        />
                       </div>
                     </div>
-                      
                   </div>
                 </div>
-              </div> 
-          </div>
-
-
-
-
-          <!--HBK-->
-          <div class="item">
-            <label class="item__popup hoverable" for="popup-hbk">
+              </div>
+            </div>
+            <!--HBK-->
+            <div class="item">
+              <label class="block__item item__popup hoverable" for="popup-hbk">
                 <p class="block__title">design / coding</p>
-
-                <img src="images/hbk.png" alt="" class="works__img">
-                <p class="works__text">LP：美容サプリメント</p>
-                <!-- <div class="works__tag">
-                  <p class="tag">Figma</p>
-                  <p class="tag">VScode</p>
-                  <p class="tag">HTML</p>
-                  <p class="tag">CSS</p>
-                  <p class="tag">Illustrator</p>
-                  <p class="tag">Photoshop</p>
-                </div> -->
-            </label>
-
-          <!--HBK ポップアップ-->
-              <input type="checkbox" class="popup-flag" id="popup-hbk">
+                <img src="images/hbk.png" alt="" class="works__img" />
+                <p class="works__text">美容サプリメント（LP）</p>
+              </label>
+              <!--HBK ポップアップ-->
+              <input type="checkbox" class="popup-flag" id="popup-hbk" />
               <label class="popup-background" for="popup-hbk"></label>
               <div class="popup">
                 <div class="popup__inner">
                   <label class="close-button hoverable" for="popup-hbk"></label>
-                    
                   <div class="popup__content">
                     <p class="block__title">design / coding</p>
-
-                    <div class="popup__img">
-                      <img src="images/hbk.png" alt="" class="works__img">
+                    <div
+                      style="width: 85%; margin: 16px auto"
+                      class="popup__img"
+                    >
+                      <img src="images/hbk_lp.png" alt="" class="works__img" />
                     </div>
-                    
-                    <p class="detail__main">美容サプリメントのLP</p>
-                    
+                    <p class="detail__main">美容サプリメント（LP）</p>
                     <div class="popup__detail">
                       <div class="detail__item">
                         <p class="detail">担当範囲</p>
-                        <p class="detail__text">デザイン・コーディング（HTML / CSS）</p>
+                        <p class="detail__text">デザイン・コーディング</p>
                       </div>
                       <div class="detail__item">
-                        <p class="detail">使用ツール</p>
-                        <p class="detail__text">Figma・Visual Studio Code</p>
+                        <p class="detail">使用技術・ツール</p>
+                        <p class="detail__text">
+                          HTML / CSS <br />Illustrator・Photoshop・Figma・Visual
+                          Studio Code
+                        </p>
                       </div>
-                      <div class="detail__item">
-                        <p class="detail">サイトの紹介</p>
-                        <p class="detail__text">美容サプリメントのLP作成</p>
-                      
-                        <p class="detail__sub">制作背景</p>
-                        <p class="detail__text">コロナ禍をきっかけに学園祭へのブッキング問い合わせが減少。学生が気軽に問い合わせできるよう、新規でLPを制作しました。<br></p>
-                        <p class="detail__sub">工夫した点</p>
-                        <p class="detail__text">ターゲット（学生）に合わせ、問い合わせへのハードルを低く持てるよう柔らかく親しみやすいデザインを意識<br>UtaTenのブランドカラーであるオレンジを基調に統一感を持たせた<br>SEOを意識し、構成・見出し・メタ情報を最適化</p>
-                        <p class="detail__sub">成果</p>
-                        <p class="detail__text">オーガニック流入によるお問い合わせ数が前年比180％に増加<br>学園祭以外の地域イベントからも新規問い合わせを獲得<br>サービス全体（UtaTen）の売上・取引先拡大に貢献</p>
-                        
-                      </div>
-                      <div class="detail__item" style="display: initial;">
-                        <p class="detail__sub">SP</p>
-                        <img src="images/hbkLp.png" alt="" class="works__img">
+                      <div class="detail__item detail_img">
+                        <img
+                          src="images/hibiki_sp.png"
+                          alt=""
+                          class="works__img"
+                        />
                       </div>
                     </div>
-                      
                   </div>
                 </div>
-              </div> 
-          </div>
-
-
-          <!--HBK-->
-          <div class="item">
-            <label class="item__popup hoverable" for="popup-more">
+              </div>
+            </div>
+            <!-- カレンダーアプリ -->
+            <div class="item">
+              <label
+                class="block__item item__popup hoverable"
+                for="popup-calendar"
+              >
                 <p class="block__title">development</p>
-
-                <img src="images/more.png" alt="" class="works__img">
-                <p class="works__text">WEBアプリ（製作中）</p>
-                <!-- <div class="works__tag">
-                  <p class="tag">Figma</p>
-                  <p class="tag">VScode</p>
-                  <p class="tag">React</p>
-                </div> -->
-            </label>
-
-          <!--作成中 ポップアップ-->
-              <input type="checkbox" class="popup-flag" id="popup-more">
-              <label class="popup-background" for="popup-more"></label>
+                <img src="images/calendar.png" alt="" class="works__img" />
+                <p class="works__text">カレンダーアプリ（個人開発）</p>
+              </label>
+              <!-- カレンダーアプリ ポップアップ -->
+              <input type="checkbox" class="popup-flag" id="popup-calendar" />
+              <label class="popup-background" for="popup-calendar"></label>
               <div class="popup">
                 <div class="popup__inner">
-                  <label class="close-button hoverable" for="popup-more"></label>
-                    
+                  <label
+                    class="close-button hoverable"
+                    for="popup-calendar"
+                  ></label>
                   <div class="popup__content">
                     <p class="block__title">development</p>
-
                     <div class="popup__img">
-                      <img src="images/more.png" alt="" class="works__img">
+                      <img
+                        style="width: 100%"
+                        src="images/calendar_sp.png"
+                        alt=""
+                        class="works__img"
+                      />
                     </div>
-                    
-                    <p class="detail__main">WEBアプリ（製作中）</p>
-                    
+                    <p class="detail__main">カレンダーアプリ（個人開発）</p>
                     <div class="popup__detail">
                       <div class="detail__item">
                         <p class="detail">担当範囲</p>
-                        <p class="detail__text">企画・デザイン・コーディング</p>
+                        <p class="detail__text">
+                          画面設計・デザイン・バックエンド開発・データベース設計・環境構築・コーディング
+                          <br />※ 開発中
+                        </p>
                       </div>
                       <div class="detail__item">
-                        <p class="detail">使用ツール</p>
-                        <p class="detail__text">Figma・Visual Studio Code</p>
+                        <p class="detail">使用技術・ツール</p>
+                        <p class="detail__text">
+                          Spring Boot（Java / Thymeleaf）・ PostgreSQL <br />
+                          HTML / CSS / Bootstrap <br />
+                          Eclipse
+                        </p>
                       </div>
                       <div class="detail__item">
                         <p class="detail">アプリの紹介</p>
-                        <p class="detail__text">日記アプリの制作</p>
-                      
-                        <p class="detail__sub">制作背景</p>
-                        <p class="detail__text">Reactを使用したアプリ制作<br></p>
+                        <p class="detail__text">
+                          インターンシップ中にサーブレット・JSPを用いて開発したカレンダーアプリを、機能や画面構成を見直し、個人開発としてSpring
+                          Bootを用いて再構築しました。
+                        </p>
                         <p class="detail__sub">工夫した点</p>
-                        <p class="detail__text">普段自分がつけている日記をアプリ上で記録できるようにしたいとおもった</p>
-                        <p class="detail__sub">成果</p>
-                        <p class="detail__text"></p>
-                        
+                        <p class="detail__text">
+                          Javaの基礎を理解することを目的とし、AIを使用せずに開発を行いました。
+                        </p>
                       </div>
-                      <div class="detail__item" style="display: initial;">
-                        <p class="detail__sub">SP</p>
-                        <img src="images/" alt="" class="works__img">
+                      <div class="detail__item">
+                        <img
+                          style="width: 50%"
+                          src="images/calendar_app.png"
+                          alt=""
+                          class="works__img"
+                        />
                       </div>
                     </div>
-                      
                   </div>
                 </div>
-              </div> 
+              </div>
+            </div>
           </div>
-
-          </div>
-  </div>
-</div>
-      
-    <!--------------------------
-      contact
-    --------------------------->
-    <div id="contact">
-      <div class="contact__wrap">
-        <div class="contact__title">
-          <h2>⚫︎ お問い合わせ</h2>
-          <p class="section__sub">contact</p>
-        </div>
-        
-        <div class="contact__main">
-          <a class="email hoverable" href="mailto:takahashi.tsuzumi@gmail.com">takahashi.tsuzumi@gmail.com</a>
         </div>
       </div>
-    </div>
-    
-  </main>
-  
-  <!--------------------------
+      <!--------------------------
+      contact
+    --------------------------->
+      <div id="contact">
+        <div class="block__wrap">
+          <div>
+            <h2>⚫︎ お問い合わせ</h2>
+            <p class="section__sub">contact</p>
+          </div>
+          <div>
+            <a class="email hoverable" href="mailto:takahashi.tsuzumi@gmail.com"
+              >takahashi.tsuzumi@gmail.com</a
+            >
+          </div>
+        </div>
+      </div>
+    </main>
+    <!--------------------------
     footer
   --------------------------->
-  <footer>
-    <div class="footer-copyright">
-      © 2025 takahashi tsuzumi.
-    </div>
-  </footer>
-
-
-
-    
-
-
+    <footer>
+      <div class="footer-copyright">© 2025 takahashi tsuzumi.</div>
+    </footer>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
     <script src="js/main.js"></script>
-    
-
-</body>
+  </body>
 </html>
