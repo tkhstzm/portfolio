@@ -40,6 +40,12 @@ img {
   fill: #00ff00;
 }
 
+@media screen and (max-width: 850px) {
+  .cursor {
+    display: none;
+  }
+}
+
 /* --------------------------
   ロード画面
 --------------------------- */
@@ -252,6 +258,15 @@ h2 {
   #about {
     padding: 150px 20px 80px;
   }
+
+  .about__text {
+    padding: 0;
+  }
+
+  .about__btn {
+    margin: 0;
+  }
+
 }
 
 /* --------------------------
@@ -341,6 +356,7 @@ h2 {
 
 @media screen and (max-width: 850px) {
   #works {
+    padding: 100px 16px 80px;
     border-radius: 60px 60px 0 0;
   }
 }
@@ -415,6 +431,7 @@ h2 {
   background: #f9f9f9;
   border-radius: 50px;
   border: 1.5px solid #4a4a4a;
+  overflow: hidden;
 }
 
 .popup__inner {
@@ -585,6 +602,7 @@ h2 {
   }
 
   .detail__note {
+    padding: 0 0 0 16px;
     font-size: 14px;
   }
 
