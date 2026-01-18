@@ -33,6 +33,7 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   });
 
+<<<<<<< HEAD
   $(function () {
     // ハンバーガー開閉
     $('#hamburger').on('click', function () {
@@ -48,6 +49,8 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   });
 
+=======
+>>>>>>> 17f2af6a4fd03b3e8f76f3b4d63531991d812b2a
   /* --------------------------
      カーソル
   --------------------------- */
