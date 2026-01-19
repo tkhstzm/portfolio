@@ -13,6 +13,6 @@
 
 ## 公開 URL
 
-https://
+https://tkhstzm.github.io/portfolio/
 
 ※現在も内容やデザインの改善を行っています。
