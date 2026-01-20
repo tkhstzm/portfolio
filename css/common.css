@@ -507,7 +507,7 @@ h2 {
 }
 
 .detail__item .link__github {
-  font-weight: bold;
+  /* font-weight: bold; */
   padding: 0 30px 0 0;
 }
 
@@ -710,6 +710,25 @@ footer {
     margin: 20px 0;
   }
 
+  .sp-nav .link__github {
+    font-size: 34px;
+  }
+
+  .sp-nav .link__github .github {
+    width: 24px;
+    height: 24px;
+    top: 17px;
+    right: -28px;
+  }
+
+  .sp-nav .link__github svg path {
+    fill: #fff;
+  }
+
+  .sp-nav .link__github:hover svg path {
+    fill: #fff;
+  }
+
   .sp-contact {
     position: fixed;
     bottom: 60px;
@@ -851,7 +870,7 @@ footer {
   }
 
   .detail__item a {
-    font-size: 12px;
+    font-size: 16px;
   }
 
   .detail__main {
@@ -887,6 +906,10 @@ footer {
 
   .detail_img {
     padding: 0;
+  }
+
+  .detail__item .github {
+    top: 2px;
   }
 
 /* アプリ詳細 */
